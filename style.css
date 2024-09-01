@@ -1,0 +1,199 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte do site */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f4f4; /* Cor de fundo mais suave */
+    color: #111010; /* Cor do texto mais escura para contraste */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background: #ff6f61; /* cor quente coral para cabeçalho */
+    color: #fff; /* Cor branca para constrate */
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Tamanho e margem do título */
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Tamanho maior para destaque*/
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem; /*Margem superior para separação do título*/
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem; /* Espaçamento entre itens do menu */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Adiciona negrito para mais destaque */
+    transition: color 0.3s; /* Adiciona transição suave para a cor */
+}
+
+nav ul li a:hover {
+    color: #ffd54f; /* Cor de destaque quando o link é hoverado */
+}
+
+/* Estilização do conteúdo principal */
+main {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaço entre as seções */
+
+}
+
+/* Seções */
+section {
+    padding: 2rem;
+    background: #fff; /* Texto Branco para contraste*/
+    border-radius: 8px; /* Bordas mais arredondadas */
+    margin-bottom: 1.5rem; /* Aumenta o espaçamento entre as seções */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra sutil */
+    display: flex; /* Permite layout flexível dentro da seção */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 1.5rem; /* Espaço entre a imagem e o texto */
+}
+
+/* Estilização da imagem quadrada e texto */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Espaço entre a imagem e o texto */
+}
+
+.image-text-container img.square {
+    width: 350px; /* Tamanho da imagem ajustável */
+    height: 350px; /* Garantia de que a imagem seja quadrada */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+    border-radius: 8px; /* Bordas arredondadas para um estilo mais moderno */
+}
+
+.image-text-container div {
+    flex: 1; /* Faz o texto ocupar o restante do espaço */
+}
+
+/* Estilização do rodapé */
+footer {
+    background: #ff6f61; /* Mesma cor  que o cabeçalho */
+    color: #111111; 
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.875rem; /* Ajusta o tamanho da fonte do rodapé */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o corpo do texto */
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada para <h2> */
+    font-size: 2rem; /* Ajuste do tamanho da fonte */
+    font-weight: 700; /* Ajuste do peso da fonte */
+    color: #ff6f61; /* Ajuste da cor da fonte */
+    text-align: center; /* Alinhamento do texto */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+/* Estilo geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    margin: 20px; /* Adiciona margem ao redor da página */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #f9f9f9; /* Define a cor de fundo da página */
+}
+
+/* Estilo para o contêiner do formulário */
+.container {
+    max-width: 600px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona padding interno ao contêiner */
+    background-color: #fff; /* Define a cor de fundo do contêiner */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao contêiner */
+}
+
+/* Estilo para o título */
+h1 {
+    text-align: center; /* Centraliza o texto do título */
+    color: #fff; /* Define a cor do texto do título */
+}
+
+/* Estilo para os rótulos dos campos do formulário */
+label {
+    display: block; /* Faz com que o rótulo ocupe toda a largura disponível */
+    margin: 10px 0 5px; /* Adiciona margens em torno dos rótulos */
+    font-weight: bold; /* Define o texto do rótulo como negrito */
+}
+
+/* Estilo para os campos de entrada de texto */
+input[type="email"],
+input[type="tel"] 
+input[type="text"] {
+    width: 100%; /* Faz com que o campo de entrada ocupe toda a largura disponível */
+    padding: 10px; /* Adiciona padding interno aos campos de entrada */
+    border: 1px solid #ccc; /* Define uma borda fina e cinza ao redor do campo de entrada */
+    border-radius: 4px; /* Adiciona bordas arredondadas aos campos de entrada */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total do campo de entrada */
+}
+
+/* Estilo para o campo de mensagem (textarea) */
+textarea {
+    width: 100%; /* Faz com que o textarea ocupe toda a largura disponível */
+    padding: 10px; /* Adiciona padding interno ao textarea */
+    border: 1px solid #ccc; /* Define uma borda fina e cinza ao redor do textarea */
+    border-radius: 4px; /* Adiciona bordas arredondadas ao textarea */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total do textarea */
+    resize: vertical; /* Permite que o textarea seja redimensionado verticalmente */
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+    background-color: #ff6f61; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    padding: 15px 20px; /* Adiciona padding interno ao botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    width: 100%; /* Faz com que o botão ocupe toda a largura disponível */
+    margin-top: 10px; /* Adiciona uma margem superior ao botão */
+}
+
+/* Estilo para o botão de envio quando o mouse passa sobre ele */
+input[type="submit"]:hover {
+    background-color: #ff6f61; /* Muda a cor de fundo do botão quando o mouse passa sobre ele */
+}
+
+/* Estilo para a mensagem de confirmação */
+.mensagem-confirmacao {
+    color: #4CAF50; /* Define a cor do texto da mensagem de confirmação */
+    text-align: center; /* Centraliza o texto da mensagem de confirmação */
+    margin-top: 20px; /* Adiciona uma margem superior para separar da parte superior */
+    font-weight: bold; /* Define o texto como negrito */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //função para mostrar uma mensagem de confirmação
+        function mostrarMensagem(event) {
+            event.preventDefault(); //impede o envio real do formulário.
+          
+            // Obtém os dados do formulário
+          const email = document.getElementById('email').value;
+          const telefone = document.getElementById('telefone').value;
+          const assunto = document.getElementById('assunto').value;
+          const mensagem = document.getElementById('mensagem').value;
+
+          //verifica se todos os campo estão preenchidos
+          if (email && telefone && mensagem) {
+            //exibe a mensagemde confirmação
+            const mensagemConfirmaçao = document.getElementById('mensagem-confirmaçao');
+            mensagemConfirmação.style.display = 'block'; //mostra a mensagem 
+          }
+            
+        }
+    </script>
+</head>
+<body>
+   
+    <header>
+        <h1>Meu Portifólio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formação.html">Formação e Experiência</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Contato">
+            <h2>Entre em contato</h2>
+            <p>
+                Envie um e-mail para <a href="m.eduarda.v.aguiar@gmail.com">m.eduarda.v.aguiar@gmail.com</a><br>
+                Ou ligue para <a href="tel:+5548996234936">(48) 99623-4936</a>
+            </p>
+        </section>
+    </main>
+        
+        <div class="container">
+            <h1>Formulário de Contato</h1>
+            <form id="form-contato" onsubmit="mostrarMensagem(event)">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{11}" placeholder="Formato: 11999999999" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+            <p id="mensagem-confirmaçao" class="mensagem-confirmaçao"></p>
+        </div>
+
+    <footer>
+        <div class="container" >
+            <p>&copy; 2024 Meu Portifólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
